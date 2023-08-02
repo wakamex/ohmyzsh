@@ -9,8 +9,8 @@ function python_prompt_info() {
     fi
 }
 
-PROMPT='%n@%m% %{${fg[green]}%} 🐍$(python_prompt_info) $(git_prompt_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
-RPROMPT='%{$fg[green]%}%~%{$reset_color%}'
+PROMPT='%n@%m% %{${fg[green]}%} 🐍$(python_prompt_info) $(git_super_status)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
+RPROMPT=''
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}ツ%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
